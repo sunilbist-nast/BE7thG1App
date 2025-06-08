@@ -35,6 +35,21 @@
         android:hint="Enter Email"
         android:inputType="textEmailAddress" />
 
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Male"
+            android:id="@+id/rdo_male"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Female"
+            android:id="@+id/rdo_female"/>
+    </RadioGroup>
+
     <EditText
         android:id="@+id/et_password"
         android:layout_width="match_parent"
