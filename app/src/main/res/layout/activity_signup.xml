@@ -76,4 +76,9 @@
         android:layout_height="65dp"
         android:text="Already have an Account? Login Here" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_result"/>
+
 </LinearLayout>
