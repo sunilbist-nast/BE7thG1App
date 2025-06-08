@@ -15,7 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText etUsername, etPassword;
-    private Button btnLogin;
+    private Button btnLogin, btnSignup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class LoginActivity extends AppCompatActivity {
         etUsername = findViewById(R.id.etUser);
         etPassword = findViewById(R.id.etPass);
         btnLogin = findViewById(R.id.btnLogin);
+        btnSignup = findViewById(R.id.btnsignup);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +39,14 @@ public class LoginActivity extends AppCompatActivity {
                 }else{
                     Toast.makeText(getApplicationContext(),"Username/Password not matched",Toast.LENGTH_LONG).show();
                 }
+            }
+        });
+
+        btnSignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this,SignupActivity.class);
+                startActivity(intent);
             }
         });
 

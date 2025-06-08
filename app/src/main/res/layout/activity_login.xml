@@ -34,4 +34,11 @@
         android:text="Login"
         android:id="@+id/btnLogin"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/btnsignup"
+        android:text="Dont have an account? Signup Here" />
+
+
 </LinearLayout>
